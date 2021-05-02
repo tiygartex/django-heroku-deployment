@@ -1,0 +1,14 @@
+For those of you having problems trying to get your templates to load (regardless of what message it says) onto website, this is what I did to get my templates to work.
+
+1. Create new folder in base directory of your project and save it as 'templates'
+2. Move the folders 'users' and 'blog' that contain your '.html' files into this new 'templates' folder in your base directory and delete the the old empty 'templates' folders in both the 'blog' and 'users' app.
+3.Go to the main project's 'settings.py' file, go to 'TEMPLATES' and in "'DIRS':[ ]" type in 'BASE_DIR / 'templates'"
+
+(It should look exactly like this: 
+'DIRS': [BASE_DIR / 'templates'], )
+
+4. Save the settings and run steps for deploying onto heroku.
+
+Hope this helps!
+P.s make sure you have all the right packages installed. Here's mine on my github. 
+https://github.com/tiygartex/django-heroku-deployment/blob/main/Requirements.txt
