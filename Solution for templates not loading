@@ -4,7 +4,7 @@ blog/home.html, blog/blog_list.html]
 For those of you having problems trying to get your templates to load templates (regardless of what message it says) onto website, this is what I did to get my templates to work.
 
 1. Create new folder in base directory of your project and save it as 'templates'
-2. Move the folders 'users' and 'blog' that contain your '.html' files into this new 'templates' folder in your base directory and delete the the old empty 'templates' folders in both the 'blog' and 'users' app.
+2. Move the folders 'users' and 'blog' that contain your '.html' files into this new 'templates' folder in your base directory and delete the old empty 'templates' folders in both the 'blog' and 'users' app.
 3.Go to the main project's 'settings.py' file, go to 'TEMPLATES' and in "'DIRS':[ ]" type in 'BASE_DIR / 'templates'"
 
 (It should look exactly like this: 
